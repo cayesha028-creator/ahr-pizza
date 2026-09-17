@@ -1,37 +1,119 @@
 <!DOCTYPE html>
-<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AHR Pizza Point - 03041232220</title>
-<style>*{margin:0;padding:0;box-sizing:border-box}body{background:#080808;color:#fff;font-family:Arial}
-header{background:#ffb400;color:#000;text-align:center;padding:20px 10px;position:sticky;top:0;z-index:10}
-header h1{font-size:32px;font-weight:900}.btn{display:inline-block;padding:12px 24px;border-radius:30px;font-weight:900;margin:6px;text-decoration:none}
-.wa{background:#25D366;color:#fff}.call{background:#000;color:#ffb400;border:2px solid #ffb400}
-.container{max-width:900px;margin:auto;padding:12px}.sec{background:#151515;border:1px solid #222;border-radius:12px;padding:15px;margin:15px 0}
-.sec h2{color:#ffb400;font-size:18px;margin-bottom:10px;border-left:4px solid #ffb400;padding-left:8px}
-.item{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px dashed #222;font-size:14px}
-.item b{color:#ffb400}footer{background:#000;border-top:3px solid #ffb400;text-align:center;padding:20px;color:#888}
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AHR Pizza Point - Online Ordering - 0304-1232220</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Poppins',sans-serif;background:#080808;color:#fff;padding-bottom:90px}
+header{background:#ffb400;color:#000;text-align:center;padding:14px 10px;position:sticky;top:0;z-index:99}
+header h1{font-family:'Bebas Neue';font-size:34px} .top-btns{margin-top:8px}
+.btn{padding:9px 16px;border-radius:25px;font-weight:800;text-decoration:none;display:inline-block;margin:4px;font-size:13px;border:none;cursor:pointer}
+.btn-yellow{background:#000;color:#ffb400;border:2px solid #000}.btn-green{background:#25D366;color:#fff}.btn-white{background:#fff;color:#000}
+.container{max-width:1250px;margin:auto;padding:10px}.title{font-family:'Bebas Neue';font-size:26px;color:#ffb400;margin:28px 0 12px;border-left:5px solid #ffb400;padding-left:10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.card{background:#141414;border:1px solid #222;border-radius:14px;overflow:hidden;text-align:center;transition:.2s}
+.card:hover{border-color:#ffb400;transform:translateY(-3px)}.card img{width:100%;height:125px;object-fit:cover}
+.card h3{font-size:13px;margin:7px 5px;min-height:36px}.card .price{color:#ffb400;font-weight:800;font-size:15px}
+.card button{background:#ffb400;color:#000;border:none;padding:7px 14px;border-radius:20px;font-weight:800;margin:6px 0 10px;cursor:pointer}
+#cart-bar{position:fixed;bottom:0;left:0;right:0;background:#111;border-top:3px solid #ffb400;padding:10px 12px;z-index:200;display:flex;justify-content:space-between;align-items:center}
+#checkout-modal{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.85);z-index:300;display:none;align-items:center;justify-content:center;padding:15px}
+#checkout-modal.show{display:flex}.modal-box{background:#fff;color:#000;border-radius:16px;padding:18px;width:100%;max-width:420px;max-height:90vh;overflow:auto}
+.modal-box h2{font-family:'Bebas Neue';font-size:28px;text-align:center}.modal-box input,.modal-box textarea{width:100%;padding:11px;border:1px solid #ccc;border-radius:8px;margin:7px 0;font-family:'Poppins';font-size:14px}
+.modal-box textarea{height:70px}.order-summary{background:#f5f5f5;padding:10px;border-radius:8px;font-size:13px;margin:10px 0;max-height:120px;overflow:auto}
 </style></head><body>
-<header><h1>AHR PIZZA POINT</h1><p>GREAT FOOD GREAT TASTE! | 0304-1232220</p><p>3PM TO 3AM | Rs.50/KM</p>
-<div style="margin-top:10px"><a class="btn wa" href="https://wa.me/923041232220">WhatsApp Order</a><a class="btn call" href="tel:03041232220">Call</a></div></header>
+<header>
+<h1>AHR PIZZA POINT</h1>
+<p style="font-size:12px;font-weight:700">GREAT FOOD GREAT TASTE! | 0304-1232220 | 3PM-3AM | Rs.50/KM Delivery</p>
+<div class="top-btns">
+<a class="btn btn-green" href="https://wa.me/923041232220">WhatsApp</a>
+<a class="btn btn-yellow" href="tel:03041232220">Call 0304-1232220</a>
+</div>
+</header>
+
 <div class="container">
-<div class="sec"><h2>REGULAR PIZZA - S 350 M 500 L 799</h2>
-<div class="item"><span>Chicken Tikka</span><b>S 350 M 500 L 799</b></div>
-<div class="item"><span>Chicken Fajita</span><b>S 350 M 500 L 799</b></div>
-<div class="item"><span>Chicken Supreme</span><b>S 350 M 500 L 799</b></div>
-<div class="item"><span>Chicken BBQ</span><b>S 350 M 500 L 799</b></div>
-<div class="item"><span>Cheese Lover</span><b>S 350 M 500 L 799</b></div>
-<div class="item"><span>Vegetable</span><b>S 350 M 500 L 799</b></div>
-<div class="item"><span>Peri Peri</span><b>S 350 M 500 L 799</b></div></div>
-<div class="sec"><h2>SPECIAL PIZZA - L 1199</h2>
-<div class="item"><span>AHR Special</span><b>L 1199</b></div><div class="item"><span>Lazania</span><b>L 1199</b></div><div class="item"><span>Crown Crust</span><b>L 1199</b></div><div class="item"><span>Behari Kabab</span><b>L 1199</b></div><div class="item"><span>Kabab Stufer</span><b>L 1199</b></div><div class="item"><span>Cheez Stufer</span><b>L 1199</b></div></div>
-<div class="sec"><h2>BURGERS - EXACT AS MENU PHOTO</h2>
-<div class="item"><span>Chicken Plain Burger</span><b>Rs.250</b></div><div class="item"><span>Zinger Burger</span><b>Rs.299</b></div><div class="item"><span>Mighty Burger</span><b>Rs.499</b></div><div class="item"><span>Tower Burger</span><b>Rs.499</b></div></div>
-<div class="sec"><h2>SHAWARMA</h2>
-<div class="item"><span>Chicken Shawarma</span><b>Rs.250</b></div><div class="item"><span>Zinger Shawarma</span><b>Rs.300</b></div><div class="item"><span>Malai Boti Shawarma</span><b>Rs.300</b></div><div class="item"><span>Kabab Shawarma</span><b>Rs.300</b></div></div>
-<div class="sec"><h2>FRIES</h2>
-<div class="item"><span>Plain Fries S</span><b>100</b></div><div class="item"><span>Plain Fries M</span><b>150</b></div><div class="item"><span>Plain Fries L</span><b>200</b></div><div class="item"><span>Masala Fries S</span><b>100</b></div><div class="item"><span>Masala Fries M</span><b>150</b></div><div class="item"><span>Masala Fries L</span><b>200</b></div><div class="item"><span>Mayo Fries</span><b>300</b></div><div class="item"><span>Loaded Fries</span><b>450</b></div></div>
-<div class="sec"><h2>DRINKS</h2><div class="item"><span>345 ML</span><b>70</b></div><div class="item"><span>500 ML</span><b>120</b></div><div class="item"><span>1000 ML</span><b>150</b></div><div class="item"><span>1500 ML</span><b>200</b></div></div>
-<div class="sec"><h2>BURGER DEALS</h2><div class="item"><span>DEAL1 Zinger+Fries+300ml</span><b>449</b></div><div class="item"><span>DEAL2 2Zinger+M Fries+500ml</span><b>850</b></div><div class="item"><span>DEAL4 4 Zinger Shawarmas</span><b>999</b></div><div class="item"><span>DEAL5 4 Zinger Burgers</span><b>999</b></div><div class="item"><span>DEAL6 5 Zinger+1.5L</span><b>1499</b></div></div>
-<div class="sec"><h2>STUDENT DEALS</h2><div class="item"><span>DEAL1 3 Small Pizzas</span><b>999</b></div><div class="item"><span>DEAL2 3 Medium</span><b>1449</b></div><div class="item"><span>DEAL3 3 Large+1500ml</span><b>2349</b></div></div>
-<div class="sec"><h2>COMBO DEALS</h2><div class="item"><span>COMBO1 2Zinger+Family Fries+500ml</span><b>999</b></div><div class="item"><span>COMBO2 2Zinger+Loaded Fries</span><b>1050</b></div><div class="item"><span>COMBO3 1Reg Large+1Spl Large+1000ml</span><b>1999</b></div><div class="item"><span>COMBO4 2Special+1000ml</span><b>2399</b></div></div>
-<div class="sec"><h2>MIDNIGHT DEALS 12AM-3AM</h2><div class="item"><span>DEAL1 1Large Reg+1Med Special</span><b>1499</b></div><div class="item"><span>DEAL2 2 Large</span><b>1399</b></div><div class="item"><span>DEAL3 2 Special</span><b>2199</b></div></div>
-</div><footer>Thank You For Choosing Us<br>AHR Pizza Point - 0304-1232220</footer></body></html>
+<div class="title">🍔 BURGERS - HD Images</div><div class="grid">
+<div class="card"><img src="https://images.unsplash.com/photo-1568909344668-6f14a07b56a0?w=500&q=80"><h3>Chicken Plain Burger</h3><div class="price">Rs.250</div><button onclick="addCart('Chicken Plain Burger',250)">Add to Cart</button></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=500&q=80"><h3>Zinger Burger ⭐ Best Seller</h3><div class="price">Rs.299</div><button onclick="addCart('Zinger Burger',299)">Add to Cart</button></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=500&q=80"><h3>Mighty Burger</h3><div class="price">Rs.499</div><button onclick="addCart('Mighty Burger',499)">Add to Cart</button></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=500&q=80"><h3>Tower Burger</h3><div class="price">Rs.499</div><button onclick="addCart('Tower Burger',499)">Add to Cart</button></div>
+</div>
+
+<div class="title">🍕 REGULAR PIZZA - S 350 M 500 L 799</div><div class="grid">
+<div class="card"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500&q=80"><h3>Chicken Tikka Pizza</h3><div class="price">S 350 | M 500 | L 799</div><button onclick="addCart('Tikka Large L799',799)">Add Large - 799</button></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500&q=80"><h3>Chicken Fajita Pizza</h3><div class="price">S 350 | M 500 | L 799</div><button onclick="addCart('Fajita Large L799',799)">Add Large - 799</button></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=500&q=80"><h3>Cheese Lover Pizza</h3><div class="price">S 350 | M 500 | L 799</div><button onclick="addCart('Cheese Lover L799',799)">Add Large - 799</button></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?w=500&q=80"><h3>AHR Special Pizza</h3><div class="price">LARGE 1199</div><button onclick="addCart('AHR Special L1199',1199)">Add to Cart - 1199</button></div>
+</div>
+
+<div class="title">🌯 SHAWARMA & FRIES</div><div class="grid">
+<div class="card"><img src="https://images.unsplash.com/photo-1593246049226-ded77bf90326?w=500&q=80"><h3>Chicken Shawarma</h3><div class="price">Rs.250</div><button onclick="addCart('Chicken Shawarma 250',250)">Add to Cart</button></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1593246049226-ded77bf90326?w=500&q=80"><h3>Zinger Shawarma</h3><div class="price">Rs.300</div><button onclick="addCart('Zinger Shawarma 300',300)">Add to Cart</button></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=500&q=80"><h3>Plain Fries Small</h3><div class="price">Rs.100</div><button onclick="addCart('Plain Fries S 100',100)">Add</button></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=500&q=80"><h3>Loaded Fries</h3><div class="price">Rs.450</div><button onclick="addCart('Loaded Fries 450',450)">Add</button></div>
+</div>
+
+<div class="title">🔥 DEALS - EXACT MENU PRICE</div><div class="grid">
+<div class="card"><img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?w=500&q=80"><h3>Burger Deal 1 - Zinger+Fries+300ml</h3><div class="price">Rs.449</div><button onclick="addCart('Burger Deal1 449',449)">Add to Cart</button></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?w=500&q=80"><h3>Burger Deal 2 - 2Zinger+M Fries+500ml</h3><div class="price">Rs.850</div><button onclick="addCart('Burger Deal2 850',850)">Add to Cart</button></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500&q=80"><h3>Student Deal 1 - 3 Small Pizzas</h3><div class="price">Rs.999</div><button onclick="addCart('Student Deal1 3 Small 999',999)">Add to Cart</button></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500&q=80"><h3>Student Deal 3 - 3 Large+1500ml</h3><div class="price">Rs.2349</div><button onclick="addCart('Student Deal3 2349',2349)">Add to Cart</button></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500&q=80"><h3>Combo Deal 3 - 1Reg+1Spl+1000ml</h3><div class="price">Rs.1999</div><button onclick="addCart('Combo Deal3 1999',1999)">Add to Cart</button></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500&q=80"><h3>Midnight Deal 2 - 2 Large</h3><div class="price">Rs.1399</div><button onclick="addCart('Midnight Deal2 1399',1399)">Add to Cart</button></div>
+</div>
+</div>
+
+<div id="cart-bar">
+<div><b>🛒 <span id="c-count">0</span> Items</b><br><span style="font-size:12px;color:#ffb400">Total: Rs.<span id="c-total">0</span></span></div>
+<button class="btn btn-green" onclick="openCheckout()">Checkout - Order Now</button>
+</div>
+
+<div id="checkout-modal">
+<div class="modal-box">
+<h2>Checkout - Customer Data</h2>
+<p style="font-size:12px;text-align:center;color:#666">Delivery ke liye details bharein</p>
+<div class="order-summary" id="order-summary"></div>
+<input type="text" id="cust-name" placeholder="Aapka Naam *">
+<input type="tel" id="cust-phone" placeholder="Phone Number * 03XX-XXXXXXX">
+<textarea id="cust-address" placeholder="Pura Address + Area *"></textarea>
+<input type="text" id="cust-note" placeholder="Koi Note? (Optional)">
+<div style="display:flex;gap:8px;margin-top:10px">
+<button class="btn btn-yellow" style="flex:1" onclick="closeCheckout()">Cancel</button>
+<button class="btn btn-green" style="flex:1" onclick="placeOrder()">WhatsApp Pe Bhejo</button>
+</div>
+<p style="font-size:10px;color:#999;text-align:center;margin-top:10px">Customer data sirf WhatsApp order ke liye use hoga</p>
+</div>
+</div>
+
+<script>
+let cart=[],total=0;
+function addCart(name,price){
+ let f=cart.find(i=>i.name===name);
+ if(f){f.qty++;}else{cart.push({name,price,qty:1});}
+ updateCart();
+ document.getElementById('cart-bar').style.display='flex';
+}
+function updateCart(){
+ total=0;let count=0;let html='';
+ cart.forEach(i=>{total+=i.price*i.qty;count+=i.qty;html+=i.name+' x'+i.qty+' = '+(i.price*i.qty)+'<br>';});
+ document.getElementById('c-count').innerText=count;
+ document.getElementById('c-total').innerText=total;
+ document.getElementById('order-summary').innerHTML=html+'<b>Total: Rs.'+total+'</b>';
+}
+function openCheckout(){
+ if(cart.length==0){alert('Cart khali hai! Pehle kuch Add karo');return;}
+ document.getElementById('checkout-modal').classList.add('show');
+}
+function closeCheckout(){document.getElementById('checkout-modal').classList.remove('show');}
+function placeOrder(){
+ let name=document.getElementById('cust-name').value;
+ let phone=document.getElementById('cust-phone').value;
+ let addr=document.getElementById('cust-address').value;
+ let note=document.getElementById('cust-note').value;
+ if(!name||!phone||!addr){alert('Naam, Phone, Address zaroori hai!');return;}
+ let items=cart.map(c=>`- ${c.name} x${c.qty} = Rs.${c.price*c.qty}`).join('%0A');
+ let msg=`*NEW ORDER - AHR PIZZA POINT*%0A%0A*Customer Data*%0AName: ${name}%0APhone: ${phone}%0AAddress: ${addr}%0ANote: ${note}%0A%0A*Order Details*%0A${items}%0A%0A*TOTAL: Rs.${total}*%0A%0ADelivery: Rs.50 Per KM%0ATiming: 3PM-3AM`;
+ window.open('https://wa.me/923041232220?text='+msg,'_blank');
+ // Clear after order
+ cart=[];updateCart();closeCheckout();document.getElementById('cart-bar').style.display='none';
+}
+</script>
+</body></html>
