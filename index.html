@@ -1,119 +1,64 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AHR Pizza Point - Online Ordering - 0304-1232220</title>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@500;700;800&display=swap" rel="stylesheet">
+<title>AHR Pizza Point - 0304-1232220 - Online Order</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@600;800&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Poppins',sans-serif;background:#080808;color:#fff;padding-bottom:90px}
-header{background:#ffb400;color:#000;text-align:center;padding:14px 10px;position:sticky;top:0;z-index:99}
-header h1{font-family:'Bebas Neue';font-size:34px} .top-btns{margin-top:8px}
-.btn{padding:9px 16px;border-radius:25px;font-weight:800;text-decoration:none;display:inline-block;margin:4px;font-size:13px;border:none;cursor:pointer}
-.btn-yellow{background:#000;color:#ffb400;border:2px solid #000}.btn-green{background:#25D366;color:#fff}.btn-white{background:#fff;color:#000}
-.container{max-width:1250px;margin:auto;padding:10px}.title{font-family:'Bebas Neue';font-size:26px;color:#ffb400;margin:28px 0 12px;border-left:5px solid #ffb400;padding-left:10px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
-.card{background:#141414;border:1px solid #222;border-radius:14px;overflow:hidden;text-align:center;transition:.2s}
-.card:hover{border-color:#ffb400;transform:translateY(-3px)}.card img{width:100%;height:125px;object-fit:cover}
-.card h3{font-size:13px;margin:7px 5px;min-height:36px}.card .price{color:#ffb400;font-weight:800;font-size:15px}
-.card button{background:#ffb400;color:#000;border:none;padding:7px 14px;border-radius:20px;font-weight:800;margin:6px 0 10px;cursor:pointer}
-#cart-bar{position:fixed;bottom:0;left:0;right:0;background:#111;border-top:3px solid #ffb400;padding:10px 12px;z-index:200;display:flex;justify-content:space-between;align-items:center}
-#checkout-modal{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.85);z-index:300;display:none;align-items:center;justify-content:center;padding:15px}
-#checkout-modal.show{display:flex}.modal-box{background:#fff;color:#000;border-radius:16px;padding:18px;width:100%;max-width:420px;max-height:90vh;overflow:auto}
-.modal-box h2{font-family:'Bebas Neue';font-size:28px;text-align:center}.modal-box input,.modal-box textarea{width:100%;padding:11px;border:1px solid #ccc;border-radius:8px;margin:7px 0;font-family:'Poppins';font-size:14px}
-.modal-box textarea{height:70px}.order-summary{background:#f5f5f5;padding:10px;border-radius:8px;font-size:13px;margin:10px 0;max-height:120px;overflow:auto}
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Poppins',sans-serif;background:#080808;color:#fff;padding-bottom:85px}
+header{background:#ffb400;color:#000;text-align:center;padding:14px;position:sticky;top:0;z-index:99}
+header h1{font-family:'Bebas Neue';font-size:36px}.btn{padding:9px 18px;border-radius:25px;font-weight:800;text-decoration:none;display:inline-block;margin:4px;font-size:13px;border:none;cursor:pointer}
+.btn-green{background:#25D366;color:#fff}.btn-black{background:#000;color:#ffb400}
+.container{max-width:1200px;margin:auto;padding:10px}.title{font-family:'Bebas Neue';font-size:26px;color:#ffb400;margin:28px 0 12px;border-left:5px solid #ffb400;padding-left:10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px}
+.card{background:#161616;border:1px solid #222;border-radius:14px;overflow:hidden;text-align:center;padding-bottom:10px}
+.card img{width:100%;height:140px;object-fit:cover;background:#222}.card h3{font-size:13px;margin:8px 4px;min-height:36px}.price{color:#ffb400;font-weight:800}
+.card button{background:#ffb400;color:#000;border:none;padding:7px 14px;border-radius:20px;font-weight:800;margin-top:6px;cursor:pointer}
+#cart-bar{position:fixed;bottom:0;left:0;right:0;background:#111;border-top:3px solid #ffb400;padding:10px 12px;display:flex;justify-content:space-between;align-items:center;z-index:200}
+#checkout{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.85);display:none;align-items:center;justify-content:center;padding:15px;z-index:300}
+#checkout.show{display:flex}.box{background:#fff;color:#000;border-radius:16px;padding:18px;width:100%;max-width:400px}
+.box input,.box textarea{width:100%;padding:11px;border:1px solid #ccc;border-radius:8px;margin:6px 0;font-family:'Poppins'}
 </style></head><body>
-<header>
-<h1>AHR PIZZA POINT</h1>
-<p style="font-size:12px;font-weight:700">GREAT FOOD GREAT TASTE! | 0304-1232220 | 3PM-3AM | Rs.50/KM Delivery</p>
-<div class="top-btns">
-<a class="btn btn-green" href="https://wa.me/923041232220">WhatsApp</a>
-<a class="btn btn-yellow" href="tel:03041232220">Call 0304-1232220</a>
-</div>
-</header>
+<header><h1>AHR PIZZA POINT</h1><p style="font-size:12px;font-weight:700">GREAT FOOD GREAT TASTE! | 0304-1232220 | 3PM-3AM | Rs.50/KM</p>
+<a class="btn btn-green" href="https://wa.me/923041232220">WhatsApp</a><a class="btn btn-black" href="tel:03041232220">Call 0304-1232220</a></header>
 
 <div class="container">
-<div class="title">🍔 BURGERS - HD Images</div><div class="grid">
-<div class="card"><img src="https://images.unsplash.com/photo-1568909344668-6f14a07b56a0?w=500&q=80"><h3>Chicken Plain Burger</h3><div class="price">Rs.250</div><button onclick="addCart('Chicken Plain Burger',250)">Add to Cart</button></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=500&q=80"><h3>Zinger Burger ⭐ Best Seller</h3><div class="price">Rs.299</div><button onclick="addCart('Zinger Burger',299)">Add to Cart</button></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=500&q=80"><h3>Mighty Burger</h3><div class="price">Rs.499</div><button onclick="addCart('Mighty Burger',499)">Add to Cart</button></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=500&q=80"><h3>Tower Burger</h3><div class="price">Rs.499</div><button onclick="addCart('Tower Burger',499)">Add to Cart</button></div>
+<div class="title">🍔 BURGERS</div><div class="grid">
+<div class="card"><img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500"><h3>Chicken Plain Burger</h3><div class="price">Rs.250</div><button onclick="addCart('Plain Burger 250',250)">Add to Cart</button></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1603064752736-4c48eff53d05?w=500"><h3>Zinger Burger - Best Seller</h3><div class="price">Rs.299</div><button onclick="addCart('Zinger Burger 299',299)">Add to Cart</button></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=500"><h3>Mighty Burger</h3><div class="price">Rs.499</div><button onclick="addCart('Mighty Burger 499',499)">Add to Cart</button></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=500"><h3>Tower Burger</h3><div class="price">Rs.499</div><button onclick="addCart('Tower Burger 499',499)">Add to Cart</button></div>
 </div>
 
-<div class="title">🍕 REGULAR PIZZA - S 350 M 500 L 799</div><div class="grid">
-<div class="card"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500&q=80"><h3>Chicken Tikka Pizza</h3><div class="price">S 350 | M 500 | L 799</div><button onclick="addCart('Tikka Large L799',799)">Add Large - 799</button></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500&q=80"><h3>Chicken Fajita Pizza</h3><div class="price">S 350 | M 500 | L 799</div><button onclick="addCart('Fajita Large L799',799)">Add Large - 799</button></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=500&q=80"><h3>Cheese Lover Pizza</h3><div class="price">S 350 | M 500 | L 799</div><button onclick="addCart('Cheese Lover L799',799)">Add Large - 799</button></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?w=500&q=80"><h3>AHR Special Pizza</h3><div class="price">LARGE 1199</div><button onclick="addCart('AHR Special L1199',1199)">Add to Cart - 1199</button></div>
+<div class="title">🍕 PIZZAS - S350 M500 L799</div><div class="grid">
+<div class="card"><img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=500"><h3>Chicken Tikka Pizza</h3><div class="price">L 799</div><button onclick="addCart('Tikka Pizza L 799',799)">Add L 799</button></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=500"><h3>Chicken Fajita Pizza</h3><div class="price">L 799</div><button onclick="addCart('Fajita Pizza L 799',799)">Add L 799</button></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1595708684082-a1735872341c?w=500"><h3>AHR Special Pizza</h3><div class="price">L 1199</div><button onclick="addCart('AHR Special L 1199',1199)">Add 1199</button></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500"><h3>Cheese Lover Pizza</h3><div class="price">L 799</div><button onclick="addCart('Cheese Lover L 799',799)">Add L 799</button></div>
 </div>
 
-<div class="title">🌯 SHAWARMA & FRIES</div><div class="grid">
-<div class="card"><img src="https://images.unsplash.com/photo-1593246049226-ded77bf90326?w=500&q=80"><h3>Chicken Shawarma</h3><div class="price">Rs.250</div><button onclick="addCart('Chicken Shawarma 250',250)">Add to Cart</button></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1593246049226-ded77bf90326?w=500&q=80"><h3>Zinger Shawarma</h3><div class="price">Rs.300</div><button onclick="addCart('Zinger Shawarma 300',300)">Add to Cart</button></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=500&q=80"><h3>Plain Fries Small</h3><div class="price">Rs.100</div><button onclick="addCart('Plain Fries S 100',100)">Add</button></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=500&q=80"><h3>Loaded Fries</h3><div class="price">Rs.450</div><button onclick="addCart('Loaded Fries 450',450)">Add</button></div>
-</div>
-
-<div class="title">🔥 DEALS - EXACT MENU PRICE</div><div class="grid">
-<div class="card"><img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?w=500&q=80"><h3>Burger Deal 1 - Zinger+Fries+300ml</h3><div class="price">Rs.449</div><button onclick="addCart('Burger Deal1 449',449)">Add to Cart</button></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?w=500&q=80"><h3>Burger Deal 2 - 2Zinger+M Fries+500ml</h3><div class="price">Rs.850</div><button onclick="addCart('Burger Deal2 850',850)">Add to Cart</button></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500&q=80"><h3>Student Deal 1 - 3 Small Pizzas</h3><div class="price">Rs.999</div><button onclick="addCart('Student Deal1 3 Small 999',999)">Add to Cart</button></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500&q=80"><h3>Student Deal 3 - 3 Large+1500ml</h3><div class="price">Rs.2349</div><button onclick="addCart('Student Deal3 2349',2349)">Add to Cart</button></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500&q=80"><h3>Combo Deal 3 - 1Reg+1Spl+1000ml</h3><div class="price">Rs.1999</div><button onclick="addCart('Combo Deal3 1999',1999)">Add to Cart</button></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500&q=80"><h3>Midnight Deal 2 - 2 Large</h3><div class="price">Rs.1399</div><button onclick="addCart('Midnight Deal2 1399',1399)">Add to Cart</button></div>
+<div class="title">🔥 DEALS - Your Exact Price</div><div class="grid">
+<div class="card"><img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?w=500"><h3>Burger Deal 1 - Zinger+Fries+300ml</h3><div class="price">Rs.449</div><button onclick="addCart('Burger Deal1 449',449)">Add 449</button></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1568909344668-6f14a07b56a0?w=500"><h3>Burger Deal 2 - 2 Zinger Deal</h3><div class="price">Rs.850</div><button onclick="addCart('Burger Deal2 850',850)">Add 850</button></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500"><h3>Student Deal 3 - 3 Large+1500ml</h3><div class="price">Rs.2349</div><button onclick="addCart('Student Deal3 2349',2349)">Add 2349</button></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500"><h3>Combo Deal 3 - 1Reg+1Special+1000ml</h3><div class="price">Rs.1999</div><button onclick="addCart('Combo Deal3 1999',1999)">Add 1999</button></div>
 </div>
 </div>
 
-<div id="cart-bar">
-<div><b>🛒 <span id="c-count">0</span> Items</b><br><span style="font-size:12px;color:#ffb400">Total: Rs.<span id="c-total">0</span></span></div>
-<button class="btn btn-green" onclick="openCheckout()">Checkout - Order Now</button>
-</div>
+<div id="cart-bar"><div><b>🛒 <span id="count">0</span> Items</b><br><span style="color:#ffb400;font-size:12px">Total Rs.<span id="total">0</span></span></div><button class="btn btn-green" onclick="openCheck()">Checkout - Order Now</button></div>
 
-<div id="checkout-modal">
-<div class="modal-box">
-<h2>Checkout - Customer Data</h2>
-<p style="font-size:12px;text-align:center;color:#666">Delivery ke liye details bharein</p>
-<div class="order-summary" id="order-summary"></div>
-<input type="text" id="cust-name" placeholder="Aapka Naam *">
-<input type="tel" id="cust-phone" placeholder="Phone Number * 03XX-XXXXXXX">
-<textarea id="cust-address" placeholder="Pura Address + Area *"></textarea>
-<input type="text" id="cust-note" placeholder="Koi Note? (Optional)">
-<div style="display:flex;gap:8px;margin-top:10px">
-<button class="btn btn-yellow" style="flex:1" onclick="closeCheckout()">Cancel</button>
-<button class="btn btn-green" style="flex:1" onclick="placeOrder()">WhatsApp Pe Bhejo</button>
-</div>
-<p style="font-size:10px;color:#999;text-align:center;margin-top:10px">Customer data sirf WhatsApp order ke liye use hoga</p>
-</div>
-</div>
+<div id="checkout"><div class="box"><h2 style="font-family:'Bebas Neue';text-align:center;font-size:28px">Checkout</h2>
+<div id="summary" style="background:#f5f5f5;padding:8px;border-radius:8px;font-size:12px;margin:8px 0"></div>
+<input id="cname" placeholder="Naam *"><input id="cphone" placeholder="Phone 03XX-XXXXXXX *"><textarea id="caddr" placeholder="Pura Address + Area *"></textarea><input id="cnote" placeholder="Note (Optional)">
+<div style="display:flex;gap:8px;margin-top:8px"><button class="btn btn-black" style="flex:1" onclick="closeCheck()">Cancel</button><button class="btn btn-green" style="flex:1" onclick="sendOrder()">WhatsApp Pe Bhejo</button></div></div></div>
 
 <script>
 let cart=[],total=0;
-function addCart(name,price){
- let f=cart.find(i=>i.name===name);
- if(f){f.qty++;}else{cart.push({name,price,qty:1});}
- updateCart();
- document.getElementById('cart-bar').style.display='flex';
-}
-function updateCart(){
- total=0;let count=0;let html='';
- cart.forEach(i=>{total+=i.price*i.qty;count+=i.qty;html+=i.name+' x'+i.qty+' = '+(i.price*i.qty)+'<br>';});
- document.getElementById('c-count').innerText=count;
- document.getElementById('c-total').innerText=total;
- document.getElementById('order-summary').innerHTML=html+'<b>Total: Rs.'+total+'</b>';
-}
-function openCheckout(){
- if(cart.length==0){alert('Cart khali hai! Pehle kuch Add karo');return;}
- document.getElementById('checkout-modal').classList.add('show');
-}
-function closeCheckout(){document.getElementById('checkout-modal').classList.remove('show');}
-function placeOrder(){
- let name=document.getElementById('cust-name').value;
- let phone=document.getElementById('cust-phone').value;
- let addr=document.getElementById('cust-address').value;
- let note=document.getElementById('cust-note').value;
- if(!name||!phone||!addr){alert('Naam, Phone, Address zaroori hai!');return;}
- let items=cart.map(c=>`- ${c.name} x${c.qty} = Rs.${c.price*c.qty}`).join('%0A');
- let msg=`*NEW ORDER - AHR PIZZA POINT*%0A%0A*Customer Data*%0AName: ${name}%0APhone: ${phone}%0AAddress: ${addr}%0ANote: ${note}%0A%0A*Order Details*%0A${items}%0A%0A*TOTAL: Rs.${total}*%0A%0ADelivery: Rs.50 Per KM%0ATiming: 3PM-3AM`;
- window.open('https://wa.me/923041232220?text='+msg,'_blank');
- // Clear after order
- cart=[];updateCart();closeCheckout();document.getElementById('cart-bar').style.display='none';
-}
+function addCart(n,p){let f=cart.find(i=>i.n==n);if(f)f.q++;else cart.push({n,p,q:1});upd()}
+function upd(){total=0;let c=0,h='';cart.forEach(i=>{total+=i.p*i.q;c+=i.q;h+=i.n+' x'+i.q+' = '+(i.p*i.q)+'<br>'});document.getElementById('count').innerText=c;document.getElementById('total').innerText=total;document.getElementById('summary').innerHTML=h+'<b>Total Rs.'+total+'</b>'}
+function openCheck(){if(cart.length==0){alert('Pehle Add to Cart karo!');return;}document.getElementById('checkout').classList.add('show')}
+function closeCheck(){document.getElementById('checkout').classList.remove('show')}
+function sendOrder(){let nm=document.getElementById('cname').value,ph=document.getElementById('cphone').value,ad=document.getElementById('caddr').value,nt=document.getElementById('cnote').value;
+if(!nm||!ph||!ad){alert('Naam, Phone, Address likho');return;}
+let items=cart.map(i=>`- ${i.n} x${i.q} = Rs.${i.p*i.q}`).join('%0A');
+let msg=`*NEW ORDER - AHR PIZZA POINT*%0A%0A*Customer*%0AName: ${nm}%0APhone: ${ph}%0AAddress: ${ad}%0ANote: ${nt}%0A%0A*Order*%0A${items}%0A%0A*TOTAL Rs.${total}*%0ADelivery Rs.50/KM%0A3PM-3AM`;window.open('https://wa.me/923041232220?text='+msg,'_blank');cart=[];upd();closeCheck();}
 </script>
 </body></html>
